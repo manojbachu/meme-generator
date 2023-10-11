@@ -60,7 +60,7 @@ class MemeGenerator extends Component {
     event.preventDefault()
 
     const {imageUrl, topText, bottomText} = this.state
-    if (imageUrl !== '' && topText !== '' && bottomText !== '') {
+    if (imageUrl !== '' || topText !== '' || bottomText !== '') {
       this.setState({displayMeme: true})
     }
   }
